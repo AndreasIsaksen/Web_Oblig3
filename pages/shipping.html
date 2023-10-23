@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<title>Shipping og sporing</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+		<link href="../css/fonts/css/fontawesome.css" rel="stylesheet">
+		<link href="../css/fonts/css/brands.css" rel="stylesheet">
+		<link href="../css/fonts/css/solid.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+	</head>
+
+	<body>
+
+		<div id="grid-container">
+
+			<header>
+				<span>
+					<img src="../img/pictures/eurosko_desk_transport.png" alt="Transport info">
+				</span>
+				<nav>
+					<div id="top-icons">
+						<i id="ham" class="fa-solid fa-bars"></i>    
+						<i id="srch" class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<span>
+						<ul class="navbar">
+							<li><a href="../index.html">Hjem</a></li>
+							<li><a href="#">Om oss</a></li>
+							<li><a href="#">Kontakt</a></li>
+							<li><a href="#">Logg inn</a></li>
+						</ul>
+						<form class="search">
+							<input type="text" placeholder="Søk etter sko">
+						</form>
+					</span>
+					<a href="../index.html" id="logo"><h1>Fotferie</h1><p>Hvert skritt en ferie</p></a>
+				</nav>
+			</header>
+				
+			<main>
+				<section id="slogan">
+					<h3>Det beste underlag for en hver opplevelse</h3>
+				</section>
+				<hr>
+
+            	<section class="shipping">
+                	<ul>
+						<h2>Leveranse</h2>
+                    	<li>
+							<h4>Våre transportører</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+	                    <li>
+							<h4>Hvor leverer vi?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+    	                <li>
+							<h4>Hvor lang tid tar det?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+	                </ul>
+	            </section>    
+    	        <section class="shipping">
+        	        <ul>
+						<h2>Sporing</h2>
+            	        <li>
+							<h4>Sporingsnummer</h4>
+							<p>Sporingsnummer på din bestilling finner du i ordre din profil, eller i bestillingsbekreftelsen i din personlige mail.</p>
+						</li>
+                	    <li>
+							<h4>Lorem ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+                    	<li>
+							<h4>Lorem ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</li>
+	                </ul>
+    	        </section>    
+			</main>
+
+			<footer>
+				<section class="foot-left">
+					<h4>Kolleksjon</h4>
+					<ul>
+						<li><a href="pages/product.html">DAME</a></li>
+						<li><a href="pages/product.html">HERRE</a></li>
+						<li><a href="pages/product.html">BARN</a></li>
+						<li><a href="pages/product.html">TILBEHØR</a></li>
+					</ul>
+					<hr>
+					<span>
+						<h5>Følg oss</h5>
+						<ul class="bottom-icon">
+							<li><a href="#youtube"><img src="../img/icons/youtube_single.png" alt="youtube icon"></a></li>
+							<li><a href="#twitter"><img src="../img/icons/twitter_single.png" alt="twitter icon"></a></li>
+							<li><a href="#instagram"><img src="../img/icons/instagram_single.png" alt="instagram icon"></a></li>
+							<li><a href="#facebook"><img src="../img/icons/facebook_single.png" alt="facebook icon"></a></li>
+						</ul>
+					</span>
+				</section>
+				<section class="foot-right">
+					<h4>Om oss</h4>
+					<ul>
+						<li><a href="#omoss">Om oss</a></li>
+						<li><a href="#service">Kundeservice</a></li>
+						<li><a href="shipping.html">Leveranse og Sporing</a></li>
+						<li><a href="#return">Retur</a></li>
+					</ul>
+					<hr>
+					<span>
+						<h5>Betalingsmetoder</h5>
+						<ul class="bottom-icon">
+							<li><a href="#paypal"><img src="../img/icons/paypal_single.png" alt="paypal icon"></a></li>
+							<li><a href="#visa"><img src="../img/icons/visa_single.png" alt="visa icon"></a></li>
+							<li><a href="#mastercard"><img src="../img/icons/mastercard_single.png" alt="mastercard icon"></a></li>
+							<li><a href="#americanexpress"><img src="../img/icons/americanexpress_single.png" alt="americanexpress icon"></a></li>
+						</ul>
+					</span>
+				</section>
+			</footer>		
+
+		</div>	
+
+		<script>
+
+            let x = document.querySelector(".navbar")
+			let y = document.querySelector(".search")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className = " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            })
+
+			document.getElementById("srch").addEventListener("click", (e) =>{
+				if (y.className === "search") {
+					y.className = " responsive";
+				} else {
+					y.className = "search";
+				}
+			})
+
+        </script>
+	
+	</body>
+</html>

@@ -1,0 +1,376 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Cinzel', serif;
+    min-width: 400px;
+    background-color: rgb(255, 252, 247);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    padding: 1rem 0;
+}
+
+/* Header */
+header{
+    background-image: url(../img/banners/mountain_plane.jpg);
+    background-size: cover;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+header span img{
+    width: 100%;
+    top: 0;
+}
+
+header nav{
+    display: inline-flex;
+    width: 100%;
+    justify-content:space-evenly;
+    }
+
+#top-icons{
+    margin: auto 0;
+    display:flex;
+    gap: 3rem;
+    height: fit-content;
+    font-size: 2rem;
+}
+
+#top-icons i{
+    border: 3px solid blue;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #fafafa;
+    color: #000
+}
+
+#logo{
+    display: block;
+    border:  solid #dd51008e;
+    border-width: 0 3px 0 3px;
+    border-radius: 50%;
+    background-color: #ffee0082;
+}
+
+#logo h1, #logo p{
+    margin: 0;
+}
+
+#logo p{
+    font-weight: 600;
+}
+
+.navbar{
+    list-style: none;
+    display: none;
+}
+
+.responsive{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1rem;
+    width: fit-content;
+    background-color: rgb(70, 70, 70);
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    list-style: none;
+}
+
+.responsive a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.search{
+    display: none;
+}
+
+
+
+
+/* Main */
+main{
+    grid-area: main;
+}
+
+#slogan{
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #dd5100;
+    border: solid #dd5100;
+}
+
+#slogan h3{
+    margin: 0;
+    padding: 0;
+}
+
+main section.flex-section{
+    background-color: #00000050;
+}
+
+main section img{
+    width: 100%;
+}
+
+#services{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#services article p{
+    background-color: #00000050;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #616161;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+/* Product nav */
+#product-nav{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Produkt lister */
+.product-list{
+    display: grid;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+.product-list span{
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #000;
+    margin-bottom: 1rem;
+}
+
+.product-list li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.product-list li a{
+    width: 100%;
+}
+
+.product-list article{
+    width: 100%;
+    padding: 1rem;
+} 
+
+/* Shipping */
+.shipping{
+    display: block;
+    width: 100%;
+}
+
+.shipping ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+.shipping ul li{
+    display: block;
+    background-color: #61616170;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Footer */
+footer{
+    grid-area: footer;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.foot-left{
+    width: 50%;
+    border-right: 3px solid #000;
+    border-top:  3px solid #000;
+    padding: 0 1rem;
+}
+
+.foot-right{
+    width: 50%;
+    padding: 0 1rem;
+    border-top:  3px solid #000;
+}
+
+footer section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer section ul li{
+    display: block;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}    
+
+footer section ul li a{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+footer section img{
+    display: inline;
+    height: 40px;
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 600px){
+    #gridContainer{
+        grid-template-areas: "header header header" ". main ." "footer footer footer";
+    }
+
+    header{
+        height: fit-content;
+    }
+    
+    header nav span{
+        display: inline-flex;
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    #logo{
+        padding-top: 1rem;
+    }
+
+    .search{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar li{
+        border: 3px solid #000;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin: auto;
+        font-weight: 600;
+        background-color: #fafafa;
+    }
+
+    #ham, .fa-magnifying-glass{
+        display: none;
+    }
+    
+    .flex-section a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .flex-section img{
+        width: 50%;
+    }
+    
+    .flex-section section{
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    .flex-section.right img{
+        order: 1;
+    }
+
+    #services article p{
+        width: fit-content;
+    }
+
+    .product-list{
+        width: 100%;
+    }
+
+    .product-list span{
+        border-bottom: 3px solid #000;
+        padding-top: 1rem;
+    }
+
+    .product-list span a{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .product-list li{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .product-list li a{
+        width: 45%;
+    }
+
+    .product-list li a img{
+        width: 100%;
+    }
+
+    .product-list article{
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    
+}
