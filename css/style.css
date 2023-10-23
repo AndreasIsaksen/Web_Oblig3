@@ -172,12 +172,12 @@ main section img{
     padding: 0;
 }
 
-.product-list span{
+.flex-section section{
     display: inline-flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    gap: 2rem;
     border-bottom: 3px solid #000;
-    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .product-list li{
@@ -200,6 +200,12 @@ main section img{
 .shipping{
     display: block;
     width: 100%;
+}
+
+.shipping h2{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
 }
 
 .shipping ul{
@@ -273,7 +279,7 @@ footer section img{
         height: fit-content;
     }
     
-    header nav span{
+    header nav section{
         display: inline-flex;
         width: 70%;
         flex-wrap: wrap;
